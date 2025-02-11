@@ -1,0 +1,100 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+display: flex;
+align-items: center;
+height: 100vh;
+justify-content:center;
+   font-family:Helvetica, sans-serif
+}
+.con{
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
+    -15px -15px 20px #eee9e9;
+    border-radius:20px;
+}
+.con .btn{
+    position: relative;
+    display: grid;
+}
+.con .btn #value{
+    grid-column: span 4;
+    user-select: none;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    width: 100%;
+    text-align: end;
+    color: #5166d5;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 20px rgba(247, 244, 244, 0.918);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: bold;
+
+}
+.con .btn span{
+    position: relative;
+    padding: 10px;
+    box-shadow:  5px 5px 10px rgba(0, 0, 0, 0.1),
+     -5px -5px 20px rgba(247, 244, 244, 0.918);
+    margin: 10px;
+    cursor:pointer;
+    border-radius:5px;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 1.2em;
+    border:2px solid white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.11),
+     -5px -5px 10px rgba(243, 240, 240, 0.11);
+     border-radius: 10px;
+}
+.con .btn span:active{
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.13),
+    inset -5px -5px 20px rgba(253, 253, 253, 0.938);
+    color: red;
+   
+}
+.con .btn span#clear{
+    background: rgb(219, 77, 67);
+    color: white;
+    grid-column: span 1;
+}
+
+.con .btn span#plus{
+    background: rgb(47, 255, 92);
+    grid-row: span 2;
+    color: white;
+    border:2px solid #edf1f4
+}
+.con .btn span#egual{
+    background: rgb(46, 136, 238);
+    grid-row: span 2;
+    color: white;
+    border:2px solid #edf1f4
+}
+.con .btn span#egual:active,
+.con .btn span#plus:active,
+.con .btn span#clear:active
+{
+box-shadow:5px 5px 10px rgba(0, 0, 0, 0.123),
+-5px -5px 20px #fff,
+inset 5px 5px 10px rgba(0, 0, 0, 0.199);
+}
+
+.ss{
+    background-color: rgb(185, 161, 161);
+}
